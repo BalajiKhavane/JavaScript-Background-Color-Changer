@@ -16,6 +16,15 @@ function getInput(event){
 function changeColor(){
     body.style.backgroundColor = color;
 }
-    
+
+const resetColor = () =>{
+    body.style.backgroundColor = "#c5d89d";
+}
+
+
 input.addEventListener('input', getInput);
-submitBtn.addEventListener('click', changeColor);
+submitBtn.addEventListener('click', resetColor);
+changeColorCard.addEventListener('click', changeColor);
+
+submitBtn.innerText = "Reset";
+
